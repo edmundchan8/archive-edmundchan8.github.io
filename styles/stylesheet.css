@@ -21,6 +21,42 @@ body, html {
   filter: blur(2.5px) brightness(50%); 
 }
 
+/* responsive image gallery on front page, linking to different webpages*/
+
+
+div.gallery {
+  border: 2px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 2px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px){
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .responsive {
+    width: 100%;
+  }
+}
+
+/* CONTENT */
 
 .text-block {
   position: absolute;
@@ -39,8 +75,8 @@ body, html {
 }
 
 .text-lower{
-	position: relative;
-	top: 20px;
+	position: absolute;
+	top: 350px;
 }
 
 .text-serif{
