@@ -1,15 +1,15 @@
 /*-------------------BODY----------------------*/
 body{
 	font-family: Lucida Sans Unicode, Palatino Linotype, sans serif;
-	font-size: 14px;
+	font-size: 20px;
 }
 
 /*--------------------FOOTER----------------*/
 
 .footer-div{
-	font-size: 12px;
+	font-size: 18px;
 }
 
 #time{
-	font-size: 8px;
+	font-size: 12px;
 }
