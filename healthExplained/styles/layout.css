@@ -33,10 +33,12 @@
 	display: inline-block;
     padding: 10px;
 	/*widens the distance between the li elements*/
-	margin: 10px 20px;
+	margin: 5px 10px;
 }
 
 li a {
+	/*Remove the underline from the links*/
+	text-decoration: none;
 	border: dotted 1px rgba(255, 0, 0, 0);
 	border-radius: 7px;
 	background-color: #f1ffe2;
@@ -55,6 +57,11 @@ li a {
 	clear: both;
 	border: solid 1px black;
 }
+
+.active{
+	background-color: #ffd1fd;
+}
+
 /*--------------------CONTENT----------------*/
 
 /*make content in the middle and have a width*/
