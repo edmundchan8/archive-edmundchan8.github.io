@@ -62,6 +62,16 @@ li a {
 	background-color: #ffd1fd;
 }
 
+//when max-screen size goes below 1200px, navbar reduces to block display, 100% width and appear one on top of each other.
+@media screen and (max-width: 1200px) {
+  .alignCenter li {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
 /*--------------------CONTENT----------------*/
 
 /*make content in the middle and have a width*/
