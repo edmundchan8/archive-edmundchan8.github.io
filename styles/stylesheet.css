@@ -14,8 +14,15 @@ li {
 	margin: 0px 0px 0px 10px;
 }
 
-a.hover {
+a{
+	padding: 4px 10px;
+}
+
+ul a:hover {
 	text-decoration: underline;
+	background-color: rgba(180, 240, 190, 1);
+	border-radius: 3px;
+	padding: 4px 10px;
 	color: blue;
 }
 
@@ -24,14 +31,12 @@ a.hover {
 	position: sticky;
 	top: 0;
 	right: 0;
-	right: 0;
 }
 
 .nav-bg {
 	background-color: white;
 	padding-top: 10px;
 }
-
 
 .nav-bottom{
 	padding-bottom: 5px;
@@ -76,6 +81,24 @@ a.hover {
 	font-family: sub-heading-font;
 }
 
+.superlarge-font-size {
+	font-size: 64px;
+}
+
+.large-font-size{
+	font-size: 32px;
+}
+
+.strong-font-style{
+	font-weight: bold;
+}
+
+/**** Paragraph font size ****/
+p{
+	font-size: 22px;
+}
+
+
 /************* text-padding **********/
 h1, h2, h3, h4, h5, h6, p{
 	padding: 10px;
@@ -98,7 +121,6 @@ h1, h2, h3, h4, h5, h6, p{
 	background-image: linear-gradient(to top, #f0c6b4, #f7b699);
 }
 
-
 .content {
 	background-image: linear-gradient(to top left, rgba(180, 240, 190, 1), rgba(230, 255, 217, 1));
 }
@@ -107,6 +129,11 @@ h1, h2, h3, h4, h5, h6, p{
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
+
+.left-right-padding{
+		padding: 0px 10px;
+	}
+
 
 
 /************ BORDERS ************/
@@ -163,17 +190,47 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 
+/************** MOBILE SPECIFIC FEATURES ***************/
+#hide-greeting-mobile{
+	display: none;
+}
 
 
 /* For mobile phones: */
-	body {
-		width: 100%;
-	}
+body {
+	width: 100%;
+}
 
  @media only screen and (min-width: 768px) {
-  /* For desktop: */
-body {
-	margin: 20px;
-	width: 88.88%;
+	  /* For desktop: */
+
+	/*** width of portfolio space ***/
+	#portfolio {
+		min-width: 100%;
 	}
- }
+
+	.left-right-padding{
+		padding: 0px 30px;
+	}
+
+	/*Hide name in the about me, and place it above photo*/
+	#hide-greeting-desktop{
+		display: none;
+	}
+
+	#hide-greeting-mobile{
+		display: block;
+	}
+
+
+	/****************  TWO COLUMN after width 768px ->  *****************/
+
+	.row {
+		display: flex;
+	}
+
+	.two-column {
+		flex: 50%;
+		padding: 10px;
+	}
+}
