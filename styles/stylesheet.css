@@ -74,7 +74,7 @@ ul a:hover {
 }
 
 .content-font {
-	font-family: p-font;
+	font-family: cambria; //p-font;
 }
 
 .sub-heading-font{
@@ -200,6 +200,12 @@ h1, h2, h3, h4, h5, h6, p{
 body {
 	width: 100%;
 }
+
+/* Set headings to be center aligned */
+h3, h5 {
+	text-align: center;
+}
+
 
  @media only screen and (min-width: 768px) {
 	  /* For desktop: */
