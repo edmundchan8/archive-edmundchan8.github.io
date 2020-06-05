@@ -149,6 +149,11 @@ h1, h2, h3, h4, h5, h6, p{
 	border-style: outset;
 }
 
+/* rounding out the "text boxes" */
+.rounded-textbox {
+	border-radius: 25px;
+}
+
 /************ IMAGES ************/
 .rounded-image{
 	border-radius: 50%;
