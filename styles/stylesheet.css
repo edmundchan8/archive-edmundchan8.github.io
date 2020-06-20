@@ -115,7 +115,6 @@ h1, h2, h3, h4, h5, h6, p{
 
 .white-bg {
 	background-color: white;
-	padding: 10px 10px 0 10px;
 }
 
 .purple-bg {
@@ -123,11 +122,13 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 .beige-bg {
-	background-image: linear-gradient(to top, #f0c6b4, #f7b699);
+	background-image: linear-gradient(to top, #FEE7DD, #F7CFBD);
 }
 
-.content {
-	background-image: linear-gradient(to top left, rgba(180, 240, 190, 1), rgba(230, 255, 217, 1));
+
+/*** give greenish background color ***/
+.green-bg {
+	background-image: linear-gradient(to top left, rgba(238, 255, 241, 1), rgba(230, 255, 217, 1));
 }
 
 .add-top-bottom-padding{
@@ -136,8 +137,16 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 .left-right-padding{
-		padding: 0px 10px;
+	padding: 0px 10px;
 	}
+	
+.text-content-padding{
+	padding: 10px 10px 0 10px;
+}
+
+.extra-right-padding{
+	padding-right: 20px;
+}
 
 
 
@@ -196,7 +205,7 @@ h1, h2, h3, h4, h5, h6, p{
 .text {
   white-space: nowrap; 
   color: black;
-  font-size: 36px;
+  font-size: 32px;
   position: absolute;
   overflow: hidden;
   top: 50%;
@@ -243,6 +252,9 @@ h1, h2, h3, h4, h5, h6, p{
 	text-align: right;
 }
 
+.align-content-left{
+	text-align: left;
+}
 
 /************** MOBILE SPECIFIC FEATURES ***************/
 #hide-greeting-mobile{
@@ -281,6 +293,11 @@ h3, h5 {
 	/*Make portfolio images center*/
 	.two-column{
 		min-width: 100%;
+	}
+	
+	/******* FONT  ******/
+	p {
+		font-size: 18px;
 	}
  }
 
