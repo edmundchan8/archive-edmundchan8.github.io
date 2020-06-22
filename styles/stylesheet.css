@@ -98,6 +98,10 @@ ul a:hover {
 	font-weight: bold;
 }
 
+.black-font{
+	color: black;
+}
+
 /**** Paragraph font size ****/
 p{
 	font-size: 22px;
@@ -182,9 +186,9 @@ h1, h2, h3, h4, h5, h6, p{
 	width: 100%;
 }
 
-.ninety-screen {
-	max-width: 90%;
-	height: auto;
+.nintey-screen {
+	max-width: 50%;
+	min-height: 100%;
 }
 
 .boxshadow-thick{
@@ -203,19 +207,18 @@ h1, h2, h3, h4, h5, h6, p{
 
 /**Text Overlay for images**/
 .text {
-  white-space: nowrap; 
   color: black;
   font-size: 32px;
   position: absolute;
-  overflow: hidden;
   top: 50%;
   left: 50%;
-  height: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-.overlay {
+.overlay {  
   position: absolute;
   bottom: 0;
   left: 0;
@@ -224,17 +227,19 @@ h1, h2, h3, h4, h5, h6, p{
   opacity: 75%;
   overflow: hidden;
   width: 100%;
-  height: 40%;
+  height: 0;
   transition: .5s ease;
+  
 }
 
 .container{
   position: relative;
+  padding: 0px;
   width: 100%;
 }
 
 .container:hover .overlay {
-  height: 0%;
+  height: 60%;  
 }
 
 /************ ALIGNMENT ************/
@@ -291,13 +296,20 @@ h3, h5 {
 	}
 	
 	/*Make portfolio images center*/
-	.two-column{
-		min-width: 100%;
+	.three-column{
+		width: 100%;
 	}
 	
 	/******* FONT  ******/
 	p {
 		font-size: 18px;
+	}
+	
+	.one-column {
+		column-count: 1;
+		width: 100%;
+		display: block;
+		margin: auto;
 	}
  }
 
@@ -330,14 +342,20 @@ h3, h5 {
 
 	
 
-	/****************  TWO COLUMN after width 768px ->  *****************/
+	/****************  THREE COLUMN after width 768px ->  *****************/
 
 	.row {
 		display: flex;
 	}
 
-	.two-column {
-		flex: 50%;
-		padding: 10px;
+	.three-column {
+		column-count: 3;
+	}
+	
+	.one-column {
+		column-count: 1;
+		width: 33.3%;
+		display: block;
+		margin: auto;
 	}
 }
